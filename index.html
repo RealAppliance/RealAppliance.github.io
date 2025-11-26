@@ -68,6 +68,12 @@
             height: 1px;
             background-color: #eee;
         }
+        .four-video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 10px;
+            margin: 40px 0;
+        }
         .three-video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -147,6 +153,9 @@
             justify-content: center;
         }
         @media (max-width: 768px) {
+            .four-video-grid {
+                grid-template-columns: 1fr;
+            }
             .three-video-grid {
                 grid-template-columns: 1fr;
             }
@@ -181,6 +190,7 @@
             <span class="author-block">Yuchong Guo<sup>1</sup></span>
             <span class="author-block">Ziyan Yu<sup>1</sup></span>
             <span class="author-block">Shangqing Mao<sup>1</sup></span>
+            <br>
             <span class="author-block">Jiyao Zhang<sup>1,2</sup></span>
             <span class="author-block">Ruihai Wu<sup>1</sup></span>
             <span class="author-block">Dongjiang Li<sup>2</sup></span>
@@ -191,7 +201,9 @@
 
         <div class="affiliation">
             
-            <span class="author-block"><sup>1</sup>CFCS, School of Computer Science, Peking University<br><sup>2</sup>Jingdong Technology Information Technology Co., Ltd</span>
+            <span class="author-block"><sup>1</sup>CFCS, School of Computer Science, Peking University
+            <br>
+            <sup>2</sup>Jingdong Technology Information Technology Co., Ltd</span>
             <br>
             <span class="author-block"><sup>*</sup>Equal contribution.</span>
             <br>
@@ -222,42 +234,6 @@
     <hr>
 
     <!-- ========================================== -->
-    <!-- DEMO VIDEOS SECTION - 演示视频 -->
-    <!-- ========================================== -->
-    <!--<section>
-        <h2>Demo Videos</h2>
-        <p style="text-align: center; color: #666; margin-bottom: 30px;">
-            [VIDEO_DESCRIPTION]
-        </p>
-        
-        <div class="three-video-grid">
-
-            <div class="video-item">
-                <video autoplay loop muted playsinline data-src="[VIDEO_1.mp4]"></video>
-            </div>
-            <div class="video-item">
-                <video autoplay loop muted playsinline data-src="[VIDEO_2.mp4]"></video>
-            </div>
-            <div class="video-item">
-                <video autoplay loop muted playsinline data-src="[VIDEO_3.mp4]"></video>
-            </div>
-            
-            <div class="video-item">
-                <video autoplay loop muted playsinline data-src="[VIDEO_4.mp4]"></video>
-            </div>
-            <div class="video-item">
-                <video autoplay loop muted playsinline data-src="[VIDEO_5.mp4]"></video>
-            </div>
-            <div class="video-item">
-                <video autoplay loop muted playsinline data-src="[VIDEO_6.mp4]"></video>
-            </div>
-            
-        </div>
-    </section>
-
-    <hr>-->
-
-    <!-- ========================================== -->
     <!-- ABSTRACT SECTION - 摘要 -->
     <!-- ========================================== -->
     <section>
@@ -286,6 +262,160 @@
         <img src="assets/creation.png" alt="Dataset Creation">
         <!-- 如果没有图片，取消注释下面这行： -->
         <!-- <div class="placeholder-text">请上传实验结果图片到项目根目录</div> -->
+    </section>
+
+    <!-- ========================================== -->
+    <!-- DEMO VIDEOS SECTION - 演示视频 -->
+    <!-- ========================================== -->
+    <section>
+        <h2>Demo Videos</h2>
+        
+        <div class="four-video-grid">
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/opendoor1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/opendoor2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/opendoor3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/opendoor4.mp4"></video>
+            </div>
+            
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/countdown1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/countdown2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/countdown3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/countdown4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lever1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lever2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lever3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lever4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lock1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lock2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lock3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/lock4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/light1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/light2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/light3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/light4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/motor1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/motor2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/motor3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/motor4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/contact1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/contact2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/contact3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/contact4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/screen1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/screen2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/screen3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/screen4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/logo1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/logo2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/logo3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/logo4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/magnificent1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/magnificent2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/magnificent3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/magnificent4.mp4"></video>
+            </div>
+
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/full1.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/full2.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/full3.mp4"></video>
+            </div>
+            <div class="video-item">
+                <video autoplay loop muted playsinline data-src="video/full4.mp4"></video>
+            </div>
+            
+        </div>
     </section>
 
     <hr>
@@ -343,7 +473,7 @@
     </section>
     -->
 
-    <!--<script>
+    <script>
     document.addEventListener('DOMContentLoaded', function() {
         // 视频懒加载逻辑
         const allVideos = Array.from(document.querySelectorAll('video'));
@@ -424,6 +554,6 @@
             img.parentNode.insertBefore(placeholder, img);
         });
     });
-    </script>-->
+    </script>
 </body>
 </html>
